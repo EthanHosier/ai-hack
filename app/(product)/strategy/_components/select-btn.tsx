@@ -36,7 +36,7 @@ const SelectBtn = () => {
           <AlertDialogHeader>
             {isExploding && (
               <ReactConfetti
-                className="-ml-[500px] -mt-[400px] w-[2000px]"
+                className="-ml-[800px] -mt-[400px] w-[2000px]"
                 numberOfPieces={100}
               />
             )}
