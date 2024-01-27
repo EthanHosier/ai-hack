@@ -8,6 +8,8 @@ import { Logo } from "./Logo";
 import { Button } from "@/components/ui/button";
 import localFont from "next/font/local";
 import { cn } from "@/lib/utils";
+import ChatBot from "@/app/chat/_components/chatbot";
+import Header from "@/app/(product)/chat/_components/header";
 const headingFont = localFont({
   src: "../../../public/fonts/font.woff2",
 });
@@ -42,6 +44,7 @@ const Hero = () => (
         }
       />
     </Section>
+    <div className="w-screen flex items-center justify-center"></div>
   </Background>
 );
 

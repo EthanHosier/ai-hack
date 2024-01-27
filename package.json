@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@radix-ui/react-alert-dialog": "^1.0.5",
+    "@radix-ui/react-separator": "^1.0.3",
     "@radix-ui/react-slot": "^1.0.2",
     "ai": "^2.2.31",
     "class-variance-authority": "^0.7.0",
@@ -19,6 +21,7 @@
     "next-seo": "^6.4.0",
     "openai": "^4.26.0",
     "react": "^18",
+    "react-confetti": "^6.1.0",
     "react-dom": "^18",
     "styled-jsx-plugin-postcss": "^4.0.1",
     "tailwind-merge": "^2.2.1",

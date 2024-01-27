@@ -15,7 +15,7 @@ export type Message = {
 const DEFAULT_MESSAGES: Message[] = [
   {
     user: "ai",
-    text: "Hi I'm your GILO assistant, here to help your business. Could you tell me a bit about your business and what you're lookig to achieve or improve?",
+    text: "Hi I'm your GILO assistant, here to help your business. Could you tell me a bit about your business and what you're looking to achieve or improve?",
   },
 ];
 
