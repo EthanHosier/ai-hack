@@ -11,7 +11,7 @@ const ChatList: React.FC<ChatListProps> = ({ chats }) => {
   return (
     <div className="p-4 pt-8 flex flex-col gap-4">
       {chats.map((c: Message, i) => (
-        <Chat message={c} />
+        <Chat key={i} message={c} />
       ))}
     </div>
   );
