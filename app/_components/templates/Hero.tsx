@@ -15,11 +15,11 @@ const Hero = () => (
   <Background color="bg-gray-100">
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo xl />}>
-        <li className="md:mx-2 mx-1">
+        {/* <li className="md:mx-2 mx-1">
           <Link href="https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template">
             GitHub
           </Link>
-        </li>
+        </li> */}
         <li className="md:mx-2 mx-1">
           <Link href="/">Sign in</Link>
         </li>
