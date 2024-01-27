@@ -5,17 +5,18 @@ import Header from "./header";
 import ChatList from "./chatlist";
 import ChatInput from "./chat-input";
 
-type User = "ai" | "user";
+type User = "assistant" | "user";
 
 export type Message = {
-  text: string;
-  user: User;
+  content: string;
+  role: User;
 };
 
 const DEFAULT_MESSAGES: Message[] = [
   {
-    user: "ai",
-    text: "Hi I'm your GILO assistant, here to help your business. Could you tell me a bit about your business and what you're looking to achieve or improve?",
+    role: "assistant",
+    content:
+      "Hi there! I'm GILO ✨, here to help your business. Could you tell me a bit about your business and what you're looking to achieve or improve?",
   },
 ];
 
@@ -30,22 +31,23 @@ const ChatBot = () => {
     setIsLoading(true);
 
     const userResponse: Message = {
-      user: "user",
-      text: value,
+      role: "user",
+      content: value,
     };
 
     let assistantResponse: Message = {
-      user: "ai",
-      text: "",
+      role: "assistant",
+      content: "",
     };
 
+    let msgs = messages;
     setMessages((prev) => [...prev, userResponse, assistantResponse]);
 
     try {
       abortControllerRef.current = new AbortController();
       const res = await fetch("/api/message", {
         method: "POST",
-        body: JSON.stringify({ text: value }),
+        body: JSON.stringify({ text: value, allMessages: msgs }),
         headers: {
           "Content-Type": "application/json",
         },
@@ -67,8 +69,8 @@ const ChatBot = () => {
         const t = decoder.decode(value);
         console.log(t);
         assistantResponse = {
-          user: "ai",
-          text: assistantResponse.text + t,
+          role: "assistant",
+          content: assistantResponse.content + t,
         };
 
         setMessages((prev) => [...prev.slice(0, -1), assistantResponse]);
@@ -94,11 +96,16 @@ const ChatBot = () => {
   return (
     <div className="bg-white rounded-lg pb-16 shadow w-[500px] h-[800px] relative">
       <Header />
-      <ChatList chats={messages} />
+      <ChatList
+        chats={messages}
+        isLoading={isLoading}
+        sendMessage={handleSubmit}
+      />
       <ChatInput
         onSubmit={handleSubmit}
         isStreaming={isLoading}
         onStop={handleStop}
+        disabled={messages.length === 3}
       />
     </div>
   );

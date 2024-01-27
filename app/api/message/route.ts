@@ -9,9 +9,13 @@ const openai = new OpenAI({
 export const runtime = "edge";
 
 export async function POST(req: Request) {
-  const { text } = await req.json();
+  const { text, allMessages } = await req.json();
   const chatCompletion = await openai.chat.completions.create({
-    messages: [...initialProgrammerMessages, { role: "user", content: text }],
+    messages: [
+      ...initialProgrammerMessages,
+      ...allMessages,
+      { role: "user", content: text },
+    ],
     model: "gpt-4-vision-preview",
     stream: true,
     max_tokens: 4096, //be careful with this one as price
