@@ -20,7 +20,7 @@ const TopCard = () => {
         <div className="rounded-full p-1.5 bg-black"></div>
         <div className="rounded-full p-1 bg-black"></div>
         {Array.from({ length: 10 }, (_, index) => index).map((i) => (
-          <div className="rounded-full p-0.5 border border-black"></div>
+          <div className="rounded-full p-0.5 border border-black" key={i}></div>
         ))}
       </div>
       <Card className="mt-8 p-8 pb-2 w-[800px] relative">
