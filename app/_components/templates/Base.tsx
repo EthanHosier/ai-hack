@@ -5,7 +5,6 @@ import { Footer } from "./Footer";
 import { Hero } from "./Hero";
 import { VerticalFeatures } from "./VerticalFeatures";
 import { cn } from "@/lib/utils";
-import ChatBot from "@/app/chat/_components/chatbot";
 
 const Base = () => (
   <div className={cn("text-gray-600 antialiased")}>
