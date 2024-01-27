@@ -21,7 +21,7 @@ const Hero = () => (
           </Link>
         </li> */}
         <li className="md:mx-2 mx-1">
-          <Link href="/">Sign in</Link>
+          <Link href="/chat">Sign in</Link>
         </li>
       </NavbarTwoColumns>
     </Section>
@@ -36,7 +36,7 @@ const Hero = () => (
         }
         description="The easiest way to build a React landing page in seconds."
         button={
-          <Link href="https://creativedesignsguru.com/category/nextjs/">
+          <Link href="/chat">
             <Button size="xl">Download Your Free Theme</Button>
           </Link>
         }
