@@ -15,7 +15,7 @@ const Chat: React.FC<ChatProps> = ({ message }) => {
         { "items-end": message.user === "user" }
       )}
     >
-      <div className="bg-green w-12"></div>
+      <div className="flex-1 min-w-12"></div>
       <div
         className={cn("text-black rounded-xl p-4", {
           "bg-muted text-black rounded-bl-none": message.user === "ai",
