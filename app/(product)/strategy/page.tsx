@@ -7,7 +7,6 @@ const MarketStrategy = () => {
   return (
     <>
       <TopCard />
-
       <BottomCards />
     </>
   );

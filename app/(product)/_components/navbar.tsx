@@ -5,7 +5,7 @@ import React from "react";
 
 const NavBar = () => {
   return (
-    <div className="w-full shadow flex justify-between px-4 py-2 items-center">
+    <div className="w-full shadow flex justify-between px-4 py-2 items-center ">
       <Logo />
       <div>
         <Button variant="ghost">

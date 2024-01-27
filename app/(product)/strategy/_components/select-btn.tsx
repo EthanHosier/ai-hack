@@ -16,8 +16,10 @@ import {
 import { Button } from "@/components/ui/button";
 import ReactConfetti from "react-confetti";
 import { Sparkles } from "lucide-react";
+import { useRouter } from "next/navigation";
 const SelectBtn = () => {
   const [isExploding, setIsExploding] = useState(false);
+  const router = useRouter();
 
   return (
     <>
@@ -54,6 +56,7 @@ const SelectBtn = () => {
             <AlertDialogAction
               onClick={() => {
                 setIsExploding(false);
+                router.push("/strategy/contract");
               }}
             >
               Generate Contract <Sparkles className="size-4 ml-2" />

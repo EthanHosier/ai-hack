@@ -6,7 +6,7 @@ const BottomCards = () => {
     <div className="flex w-full justify-center gap-6 bg-muted pt-8 pb-8">
       <Card className="w-[390px]">
         <CardHeader className="bg-[#D5D5D5] rounded-t-lg font-semibold text-xl">
-          Role
+          About
         </CardHeader>
         <CardContent>
           <h1 className="font-semibold mt-2">Who you are</h1>
@@ -25,7 +25,7 @@ const BottomCards = () => {
       </Card>
       <Card className="w-[390px]">
         <CardHeader className="bg-[#D5D5D5] rounded-t-lg font-semibold text-xl">
-          Company
+          Projects
         </CardHeader>
         <CardContent>
           <h1 className="font-semibold mt-2">Company mission</h1>
