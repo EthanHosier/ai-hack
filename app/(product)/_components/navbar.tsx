@@ -6,20 +6,22 @@ import React from "react";
 
 const NavBar = () => {
   return (
-    <div className="w-full shadow flex justify-between px-4 py-2 items-center ">
-      <Link href={"/"}>
-        <Logo />
-      </Link>
-      <div>
-        <Button variant="ghost">
-          <Home />
-        </Button>
-        <Button variant="ghost">
-          <BarChart2 />
-        </Button>
-        <Button variant="ghost">
-          <User />
-        </Button>
+    <div className="w-full shadow flex px-4 py-2 items-center justify-center">
+      <div className="flex justify-between max-w-6xl flex-1 ">
+        <Link href={"/"}>
+          <Logo />
+        </Link>
+        <div>
+          <Button variant="ghost">
+            <Home />
+          </Button>
+          <Button variant="ghost">
+            <BarChart2 />
+          </Button>
+          <Button variant="ghost">
+            <User />
+          </Button>
+        </div>
       </div>
     </div>
   );
