@@ -10,6 +10,8 @@ import localFont from "next/font/local";
 import { cn } from "@/lib/utils";
 import Header from "@/app/(product)/chat/_components/header";
 import ChatBot from "@/app/(product)/chat/_components/chatbot";
+import { Badge } from "@/components/ui/badge";
+import { Check } from "lucide-react";
 const headingFont = localFont({
   src: "../../../public/fonts/font.woff2",
 });
@@ -38,8 +40,26 @@ const Hero = () => (
         button={<></>}
       />
     </Section>
-    <div className="flex w-full items-center justify-center">
+    <div className="flex flex-col w-full items-center justify-center">
       <ChatBot preview />
+      <div className="mt-36 flex">
+        {/* {["Market Strategy", "Supply Chains", "Project Management"].map(
+          (e, i) => (
+            <div
+              key={i}
+              className={cn(
+                "flex text-black mr-2 mb-2 bg-white p-2 text-md rounded-full mx-4 items-center gap-2 font-semibold pr-4",
+                headingFont.className
+              )}
+            >
+              <div className="rounded-full size-10 bg-primary flex items-center justify-center">
+                <Check className="size-6" />
+              </div>
+              {e}
+            </div>
+          )
+        )} */}
+      </div>
     </div>
   </Background>
 );

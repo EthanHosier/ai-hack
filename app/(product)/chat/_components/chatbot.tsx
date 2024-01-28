@@ -98,7 +98,7 @@ const ChatBot: React.FC<ChatBotProps> = ({ preview }) => {
 
   if (preview)
     return (
-      <div className="bg-white rounded-lg pb-16 shadow w-[500px] h-[300px] mb-24">
+      <div className="bg-white rounded-lg pb-16 shadow w-[500px] h-[300px]">
         <Header />
         <ChatList
           chats={messages}

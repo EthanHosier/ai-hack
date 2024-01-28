@@ -10,7 +10,7 @@ const Header = () => {
           alt="Ai profile pic"
         ></img>
         <div className="flex-col ">
-          <h1 className="font-semibold text-xl">Hi, I{"'"}m Gilo 👋</h1>
+          <h1 className="font-semibold text-xl">Hi, I{"'"}m GILO 👋</h1>
           <h2 className="text-muted-foreground">I am here to assist you</h2>
         </div>
       </div>
