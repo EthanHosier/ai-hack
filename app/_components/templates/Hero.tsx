@@ -16,13 +16,11 @@ const Hero = () => (
   <Background color="bg-gray-100">
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo xl />}>
-        {/* <li className="md:mx-2 mx-1">
-          <Link href="https://github.com/ixartz/Next-JS-Landing-Page-Starter-Template">
-            GitHub
-          </Link>
-        </li> */}
         <li className="md:mx-2 mx-1">
-          <Link href="/chat">Sign in</Link>
+          <Link href="#">About us</Link>
+        </li>
+        <li className="md:mx-2 mx-1">
+          <Link href="/chat">Go to app</Link>
         </li>
       </NavbarTwoColumns>
     </Section>
@@ -31,16 +29,12 @@ const Hero = () => (
       <HeroOneButton
         title={
           <span className={cn(headingFont.className, "gap-2")}>
-            {"The modern landing page for\n"}
-            <span className="text-primary">React developers</span>
+            {"Spark Success with "}
+            <span className="text-primary">AI ✨</span>
           </span>
         }
-        description="The easiest way to build a React landing page in seconds."
-        button={
-          <Link href="/chat">
-            <Button size="xl">Download Your Free Theme</Button>
-          </Link>
-        }
+        description="Connecting Small Businesses & NGOs to Global Experts"
+        button={<></>}
       />
     </Section>
     <div className="w-screen flex items-center justify-center"></div>
