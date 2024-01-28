@@ -92,7 +92,7 @@ const GptContract = () => {
     // After 5 seconds, set loading to false
     const timeoutId = setTimeout(() => {
       setIsLoading(false);
-    }, 3000);
+    }, 1500);
 
     // Cleanup the timeout when the component is unmounted
     return () => clearTimeout(timeoutId);
