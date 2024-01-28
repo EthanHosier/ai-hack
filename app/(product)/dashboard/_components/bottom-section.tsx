@@ -73,12 +73,10 @@ const BottomSection = () => {
             <div className="mt-2">
               <ol style={{ listStyleType: "disc" }}>
                 <li className="mt-4">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Exceeded leads target! 100 leads at a 20% increase, surpassing
+                  the goal of 70.
                 </li>
-                <li className="mt-4">
-                  Integer nec odio. Praesent libero. Sed cursus ante dapibus
-                  diam.
-                </li>
+                <li className="mt-4">Exceeded online traffic target by 43%!</li>
               </ol>
             </div>
           </CardContent>

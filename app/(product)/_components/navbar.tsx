@@ -11,7 +11,7 @@ const NavBar = () => {
         <Link href={"/"}>
           <Logo />
         </Link>
-        <div>
+        <div className="flex items-center">
           <Button variant="ghost">
             <Home />
           </Button>

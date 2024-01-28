@@ -48,8 +48,8 @@ const SelectBtn = () => {
               and John Doe!
             </AlertDialogTitle>
             <AlertDialogDescription>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Use our simple AI powered tool to generate your Gainshare
+              Agreement.
             </AlertDialogDescription>
           </AlertDialogHeader>
           <AlertDialogFooter>

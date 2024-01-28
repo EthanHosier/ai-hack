@@ -21,7 +21,7 @@ const VerticalFeatures = () => (
     />
     <VerticalFeatureRow
       title="Your Opportunity, Our Team"
-      description="Unlock the potential of the $X billion consulting market, overlooked by traditional players. Join hands with our passionate team, dedicated to transforming your experience and ensuring you thrive in an ever-evolving business landscape."
+      description="Unlock the potential of the billion dollar consulting market, overlooked by traditional players. Join hands with our passionate team, dedicated to transforming your experience and ensuring you thrive in an ever-evolving business landscape."
       image="/images/feature3.svg"
       imageAlt="Third feature alt text"
     />
