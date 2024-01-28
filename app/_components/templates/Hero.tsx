@@ -23,7 +23,7 @@ const Hero = () => (
           <Link href="#"> About us</Link>
         </li>
         <li className="md:mx-2 mx-1">
-          <Link href="/chat">Go to app</Link>
+          <Link href="#">Contact Us</Link>
         </li>
       </NavbarTwoColumns>
     </Section>

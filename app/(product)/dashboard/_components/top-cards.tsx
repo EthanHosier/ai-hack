@@ -54,7 +54,7 @@ const TopCards = () => {
             comment={
               <p className="text-muted-foreground text-sm">Target: 70</p>
             }
-            icon={<Users />}
+            icon={<Users className="text-muted-foreground" />}
           />
           <KpiCard
             title={
@@ -74,7 +74,7 @@ const TopCards = () => {
             comment={
               <p className="text-muted-foreground text-sm">Target: 21</p>
             }
-            icon={<CheckCheck />}
+            icon={<CheckCheck className="text-muted-foreground" />}
           />
           <KpiCard
             title={<h1>Online Traffic</h1>}
@@ -82,7 +82,7 @@ const TopCards = () => {
             comment={
               <p className="text-muted-foreground text-sm">Target: 70</p>
             }
-            icon={<Computer />}
+            icon={<Computer className="text-muted-foreground" />}
           />
         </div>
       </div>

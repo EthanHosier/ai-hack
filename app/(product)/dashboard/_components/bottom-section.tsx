@@ -24,8 +24,8 @@ const BottomSection = () => {
             <div className="flex justify-between mt-4">
               <div className="flex-1">
                 <h1 className="text-muted-foreground flex items-center">
-                  <PoundSterling className="-mr-1 size-4" />{" "}
-                  <PoundSterling className="size-4" />
+                  {/* <PoundSterling className="-mr-1 size-4" />{" "}
+                  <PoundSterling className="size-4" /> */}
                 </h1>
                 <h2 className="text-black flex items-center mt-4 text-xs">
                   <Languages className="size-5 mr-4" /> English (Fluent), German
