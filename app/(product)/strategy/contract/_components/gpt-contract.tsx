@@ -143,7 +143,7 @@ const GptContract = () => {
   return (
     <div className="prose">
       {isLoading ? (
-        <SyncLoader size={10} />
+        <SyncLoader size={10} className="mt-4" />
       ) : (
         <Markdown remarkPlugins={[remarkGfm]}>{GAINSHARE_AGREEMENT}</Markdown>
       )}

@@ -26,7 +26,7 @@ const profiles: Profile[] = [
   {
     imageUrl: "/images/person.avif",
     name: "John Doe",
-    previouslyAt: "Google",
+    previouslyAt: "Accenture",
     occupation: "Consultant",
   },
   {

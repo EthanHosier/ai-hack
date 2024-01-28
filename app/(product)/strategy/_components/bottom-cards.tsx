@@ -6,39 +6,36 @@ const BottomCards = () => {
     <div className="flex w-full justify-center gap-6 bg-muted pt-8 pb-8">
       <Card className="w-[390px]">
         <CardHeader className="bg-[#D5D5D5] rounded-t-lg font-semibold text-xl">
-          About
+          Professional Experience
         </CardHeader>
         <CardContent>
-          <h1 className="font-semibold mt-2">Who you are</h1>
+          <h1 className="font-semibold mt-2">
+            Senior Consultant, Global Expansion Advisor, Accenture (2019-2022)
+          </h1>
           <ul style={{ listStyleType: "disc" }} className="mt-2 ml-4">
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-            <li className="mt-2">
-              Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+            <li>
+              Led a team advising European companies on market entry strategies,
+              providing insights on regulatory landscapes, consumer trends, and
+              distribution channels.
             </li>
-            <li className="mt-2">
-              Etiam elit est, hendrerit sit amet, tincidunt ac, viverra sed,
-              nulla.
-            </li>
-            <li className="mt-2">Donec porta diam eu massa.</li>
           </ul>
         </CardContent>
       </Card>
       <Card className="w-[390px]">
         <CardHeader className="bg-[#D5D5D5] rounded-t-lg font-semibold text-xl">
-          Projects
+          Project Experience
         </CardHeader>
         <CardContent>
-          <h1 className="font-semibold mt-2">Company mission</h1>
+          <h1 className="font-semibold mt-2">
+            Expansion Strategy for Artisanal Coffee Chain (UK to Germany) (2019)
+          </h1>
           <ul style={{ listStyleType: "disc" }} className="mt-2 ml-4">
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+            <li>Lead Consultant</li>
             <li className="mt-2">
-              Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+              Successfully guided the UK-based coffee chain in establishing a
+              presence in major German cities by focusing on market analysis,
+              local partnerships, and consumer engagement strategies.
             </li>
-            <li className="mt-2">
-              Etiam elit est, hendrerit sit amet, tincidunt ac, viverra sed,
-              nulla.
-            </li>
-            <li className="mt-2">Donec porta diam eu massa.</li>
           </ul>
         </CardContent>
       </Card>

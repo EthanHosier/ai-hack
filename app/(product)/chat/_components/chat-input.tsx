@@ -51,7 +51,7 @@ const ChatInput: React.FC<ChatInputProps> = ({
           {/* <Input className="rotating-border" /> */}
           <div className="bblock h-5 bg-white glow -ml-4 w-[320px] -mt-3.5" />
 
-          <Input className="z-100 absolute bg-white w-[330px] rounded-lg h-[32px] mt-[2px] p-1" />
+          <Input className="z-100 absolute bg-white w-[330px] rounded-lg h-[32px] mt-[2px] p-1 focus:border-transparent border-transparent focus:outline-none outline-none ring-transparent focus:ring-transparent" />
         </Link>
         <Button
           type="button"
