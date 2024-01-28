@@ -29,7 +29,8 @@ const ProfilePreview: React.FC<ProfilePreviewProps> = ({
       <h1 className="font-semibold mt-2">{name}</h1>
       <h2 className="text-sm mt-2">{occupation}</h2>
       <h2 className="text-sm text-muted-foreground">
-        Previously at <span>{previouslyAt}</span>
+        {previouslyAt === "breweries" ? "Experience with" : "Previously at"}{" "}
+        <span>{previouslyAt}</span>
       </h2>
 
       <div className="w-full mt-4 flex justify-center">

@@ -26,26 +26,26 @@ const profiles: Profile[] = [
   {
     imageUrl: "/images/person.avif",
     name: "John Doe",
-    previouslyAt: "Accenture",
-    occupation: "Consultant",
+    previouslyAt: "breweries",
+    occupation: "Marketing Strategist",
   },
   {
     imageUrl: "/images/person1.jpg",
     name: "Jane Smith",
-    previouslyAt: "Microsoft",
-    occupation: "Analyst",
+    previouslyAt: "ABinBev",
+    occupation: "Lead Generation",
   },
   {
     imageUrl: "/images/person2.avif",
     name: "Bob Johnson",
-    previouslyAt: "Amazon",
-    occupation: "Manager",
+    previouslyAt: "Mckinsey",
+    occupation: "Marketing Strategist",
   },
   {
     imageUrl: "/images/person3.jpeg",
     name: "Emily Brown",
-    previouslyAt: "Facebook",
-    occupation: "Engineer",
+    previouslyAt: "BCG",
+    occupation: "Closing Expert",
   },
 ];
 
