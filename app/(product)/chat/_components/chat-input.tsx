@@ -1,9 +1,11 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Skeleton } from "@/components/ui/skeleton";
 import { cn } from "@/lib/utils";
 import { Grid3X3, Send } from "lucide-react";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Link from "next/link";
 
 interface ChatInputProps {
@@ -21,6 +23,15 @@ const ChatInput: React.FC<ChatInputProps> = ({
   disabled,
   preview,
 }) => {
+  const textareaRef = useRef<HTMLTextAreaElement | null>(null); // Specify the type as HTMLTextAreaElement
+
+  useEffect(() => {
+    // Focus on the textarea when the component mounts
+    if (textareaRef.current) {
+      textareaRef.current.focus();
+    }
+  }, []);
+
   const handleSubmit = (e: any) => {
     e.preventDefault();
 
@@ -61,6 +72,7 @@ const ChatInput: React.FC<ChatInputProps> = ({
       <Grid3X3 className="size-8" />
 
       <textarea
+        ref={textareaRef}
         disabled={disabled}
         name="text"
         className={cn(
