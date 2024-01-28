@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 const Banner = () => (
   <Section>
     <CTABanner
-      title="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+      title="Empower your business with expert guidance."
       subtitle="Start your Free Trial."
       button={
         <Link href="https://creativedesignsguru.com/category/nextjs/">

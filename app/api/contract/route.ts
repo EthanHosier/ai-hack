@@ -14,7 +14,7 @@ export async function POST(req: Request) {
   const { text } = await req.json();
   const chatCompletion = await openai.chat.completions.create({
     messages: [...initialProgrammerMessages, { role: "user", content: text }],
-    model: "gpt-4-vision-preview",
+    model: "gpt-4-0125-preview",
     stream: true,
     max_tokens: 4096, //be careful with this one as price
   });

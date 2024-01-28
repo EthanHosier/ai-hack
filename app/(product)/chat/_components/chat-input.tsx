@@ -34,10 +34,13 @@ const ChatInput: React.FC<ChatInputProps> = ({
 
   if (preview)
     return (
-      <div className="w-full bg-muted rounded-xl p-4 items-center gap-4 flex">
+      <div className="w-full bg-muted rounded-xl p-4 items-center gap-4 flex justify">
         <Grid3X3 className="size-8" />
-        <Link href="/chat" className="flex-1">
-          <Input className="rotating-border" />
+        <Link href="/chat" className="flex-1 flex items-center justify-center">
+          {/* <Input className="rotating-border" /> */}
+          <div className="bblock h-5 bg-white glow -ml-4 w-[320px] -mt-3.5" />
+
+          <Input className="z-100 absolute bg-white w-[330px] rounded-lg h-[32px] mt-[2px] p-1" />
         </Link>
         <Button
           type="button"
