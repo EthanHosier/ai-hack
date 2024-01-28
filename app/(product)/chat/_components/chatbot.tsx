@@ -12,6 +12,10 @@ export type Message = {
   role: User;
 };
 
+interface ChatBotProps {
+  preview?: boolean;
+}
+
 const DEFAULT_MESSAGES: Message[] = [
   {
     role: "assistant",
@@ -19,8 +23,7 @@ const DEFAULT_MESSAGES: Message[] = [
       "Hi there! I'm GILO ✨, here to help your business. Could you tell me a bit about your business and what you're looking to achieve or improve?",
   },
 ];
-
-const ChatBot = () => {
+const ChatBot: React.FC<ChatBotProps> = ({ preview }) => {
   const [messages, setMessages] = useState<Message[]>(DEFAULT_MESSAGES);
 
   const [isLoading, setIsLoading] = useState(false);
@@ -92,6 +95,26 @@ const ChatBot = () => {
     abortControllerRef.current.abort();
     abortControllerRef.current = null;
   };
+
+  if (preview)
+    return (
+      <div className="bg-white rounded-lg pb-16 shadow w-[500px] h-[300px] mb-24">
+        <Header />
+        <ChatList
+          chats={messages}
+          isLoading={isLoading}
+          sendMessage={handleSubmit}
+          preview
+        />
+        <ChatInput
+          onSubmit={handleSubmit}
+          isStreaming={isLoading}
+          onStop={handleStop}
+          disabled={messages.length === 3}
+          preview
+        />
+      </div>
+    );
 
   return (
     <div className="bg-white rounded-lg pb-16 shadow w-[500px] h-[800px] relative">

@@ -2,6 +2,7 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import React from "react";
+import GptContract from "./_components/gpt-contract";
 
 const Page = () => {
   return (
@@ -9,7 +10,9 @@ const Page = () => {
       <div className="w-[800px] mx-auto">
         <Card className="p-4">
           <CardContent>
-            <CardContent></CardContent>
+            <CardContent className="overflow-y-auto h-[800px]">
+              <GptContract />
+            </CardContent>
           </CardContent>
         </Card>
       </div>

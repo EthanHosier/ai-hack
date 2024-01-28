@@ -53,15 +53,22 @@ interface ChatListProps {
   chats: Message[];
   isLoading: boolean;
   sendMessage: (value: string) => void;
+  preview?: boolean;
 }
 
 const ChatList: React.FC<ChatListProps> = ({
   chats,
   isLoading,
   sendMessage,
+  preview,
 }) => {
   return (
-    <div className="p-4 pt-8 flex flex-col gap-4 overflow-y-auto h-[630px]">
+    <div
+      className={cn("p-4 pt-8 flex flex-col gap-4 overflow-y-auto", {
+        "h-[630px]": !preview,
+        "pb-8": preview,
+      })}
+    >
       {chats.map((c: Message, i) => (
         <>
           <Chat key={i} message={c} />

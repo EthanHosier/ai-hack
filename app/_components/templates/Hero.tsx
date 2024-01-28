@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import localFont from "next/font/local";
 import { cn } from "@/lib/utils";
 import Header from "@/app/(product)/chat/_components/header";
+import ChatBot from "@/app/(product)/chat/_components/chatbot";
 const headingFont = localFont({
   src: "../../../public/fonts/font.woff2",
 });
@@ -25,7 +26,7 @@ const Hero = () => (
       </NavbarTwoColumns>
     </Section>
 
-    <Section yPadding="pt-20 pb-32">
+    <Section yPadding="pt-20">
       <HeroOneButton
         title={
           <span className={cn(headingFont.className, "gap-2")}>
@@ -37,7 +38,9 @@ const Hero = () => (
         button={<></>}
       />
     </Section>
-    <div className="w-screen flex items-center justify-center"></div>
+    <div className="flex w-full items-center justify-center">
+      <ChatBot preview />
+    </div>
   </Background>
 );
 
