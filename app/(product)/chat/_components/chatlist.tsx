@@ -105,7 +105,7 @@ const ChatList: React.FC<ChatListProps> = ({
             </div>
           )}
 
-          {chats.length >= 5 &&
+          {chats.length === 5 &&
             i === 4 &&
             chats.map((c) => c.content).indexOf("Go-to-Market Strategy") !==
               -1 &&
