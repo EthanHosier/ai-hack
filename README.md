@@ -1,4 +1,4 @@
-GILO Consulting: The AI-Powered Future of Consulting for Small Businesses \& NGOs
+# GILO Consulting: The AI-Powered Future of Consulting for Small Businesses \& NGOs
 
 [Demo](restorestaurants.com)
 
