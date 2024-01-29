@@ -2,7 +2,7 @@
 
 ## GILO Consulting: The AI-Powered Future of Consulting for Small Businesses \& NGOs
 
-[Demo (desktop only)](restorestaurants.com)
+[Demo (desktop only)](https://restorestaurants.com)
 
 ### Getting Started
 
