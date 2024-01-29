@@ -1,10 +1,10 @@
 # AI Ventures Hackathon Entry
 
-# GILO Consulting: The AI-Powered Future of Consulting for Small Businesses \& NGOs
+## GILO Consulting: The AI-Powered Future of Consulting for Small Businesses \& NGOs
 
 [Demo (desktop only)](restorestaurants.com)
 
-## Getting Started
+### Getting Started
 
 First, run the development server:
 
