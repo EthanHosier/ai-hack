@@ -11,7 +11,7 @@
 Install dependencies 
 ```bash
 cd ai-hack && npm i
-
+```
 Then, run the development server:
 
 ```bash
